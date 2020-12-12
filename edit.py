@@ -31,7 +31,7 @@
                         function content_to_monaco() {
                                 var e      = document.querySelector('#content');
                                 var monaco = document.querySelector('#monaco_editor');
-                                monaco.style.display == 'none'||1 ? editor.setValue(e.value) : 0;
+                                monaco.style.display == 'none' ? editor.setValue(e.value) : 0;
                         }
                         
                         function change_editor() {
