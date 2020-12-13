@@ -24,7 +24,7 @@
                             var normal = document.getElementById("content");
                             var monaco = document.getElementById("monaco_editor");
                             if (normal.style.display == "none") {
-                                document.getElementById('content').innerHTML = window.editor.getValue();
+                                document.getElementById('content').value = window.editor.getValue();
                             }
                         }
                         
