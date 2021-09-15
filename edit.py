@@ -5,7 +5,6 @@
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.20.0/min/vs/loader.min.js"></script>
                 <hr class="main_hr">
                 <form method="post">
-                    <div id="wiki_notice">편집기가 대폭 개편되었습니다. 헷갈리는 경우 도움말을 반드시 확인해주세요.</strong> <details><summary>도움말 확인</summary><li>기본 편집기 버튼을 눌러서 모나코 에디터에서 기본 편집기로 변경할 수 있습니다.</li><li>다시 모나코 편집기를 눌러 기본 편집기에서 모나코 편집기로 변경할 수 있습니다.</li><li>모나코 편집기 > 기본 편집기로 넘어가는 경우, 모나코 편집기에 있던 내용이 기본 편집기로 자동으로 이동합니다.</li><li>하지만 기본 편집기에 있던 내용은 모나코 편집기로 바꿔도 다시 넘어오지 않습니다.</li><li>또한 <strong>한 번 기본 편집기로 전환한 경우</strong>, 모든 저장 내용은 <strong>기본 편집기를 기준으로 이루어집니다.</strong> (모나코 편집기에 내용을 입력해도 저장 시에는 기본 편집기에 있는 내용으로 저장됨)</li></details></div>
                     <script>
                         do_stop_exit()
                         var editor_value = 0;
@@ -85,7 +84,6 @@
                     <input placeholder="''' + load_lang('why') + '''" name="send" type="text">
                     <textarea id="origin" name="otent">''' + html.escape(re.sub('\n$', '', data_old)) + '''</textarea>
                     <hr class="main_hr">
-                    <label>저장 버튼을 누르게 되면 당신은 기여한 내용을 <strong>CC BY-NC-SA 2.0 KR</strong>으로 배포하고, 바다위키의 기본 규정을 준수하며 기여한 문서에 대한 하이퍼링크나 URL을 이용하여 저작자 표시를 하는 것으로 충분하다는 데 동의하는 것입니다. 이 <strong>동의는 철회할 수 없습니다.</strong></label>
                     ''' + captcha_get() + ip_warring() + '''
                     <hr class="main_hr">
                     <button id="save" type="submit" onclick="monaco_to_content();">''' + load_lang('save') + '''</button>
@@ -94,7 +92,6 @@
                 </form>
                 <hr class="main_hr">
                 <div id="include_1"></div>
-                <script>load_include("틀:바다위키", "include_1", []);</script>
             ''',
             menu = [['backlink/' + url_pas(name), load_lang('backlink')], ['delete/' + url_pas(name), load_lang('delete')], ['move/' + url_pas(name), load_lang('move')]]
         ))
