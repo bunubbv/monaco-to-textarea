@@ -1,6 +1,3 @@
-        return easy_minify(flask.render_template(skin_check(), 
-            imp = [name, wiki_set(), custom(), other2([' (' + sub + ')', 0])],
-            data = '''
                 <link rel="stylesheet" data-name="vs/editor/editor.main" href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.20.0/min/vs/editor/editor.main.min.css">
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.20.0/min/vs/loader.min.js"></script>
                 <hr class="main_hr">
@@ -92,6 +89,4 @@
                 </form>
                 <hr class="main_hr">
                 <div id="include_1"></div>
-            ''',
-            menu = [['backlink/' + url_pas(name), load_lang('backlink')], ['delete/' + url_pas(name), load_lang('delete')], ['move/' + url_pas(name), load_lang('move')]]
-        ))
+ 
